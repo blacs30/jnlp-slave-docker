@@ -5,7 +5,7 @@
 	ENV PATH /opt/google-cloud-sdk/bin:$PATH
 
 	USER root
-	RUN apt-get install --no-install-recommends -y python build-essential python-pip python-colorama \
+	RUN apt-get install --no-install-recommends -y python build-essential python-pip python-colorama dnsutils \
 	&& pip install --upgrade setuptools  \
 	&& curl -sSL https://get.docker.com/ | sh \
 	&& pip install docker \
