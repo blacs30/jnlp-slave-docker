@@ -3,7 +3,7 @@
 	USER root
 
 	ENV KUBE_LATEST_VERSION="v1.15.0"
-	ENV KUSTOMIZE_VERSION="2.1.0"
+	ENV KUSTOMIZE_VERSION="2.0.3"
 
 	RUN apk add --update git docker python py-pip ca-certificates \
 	&& apk add --update -t deps curl \
